@@ -5,7 +5,7 @@ public class PrimeNumbers {
         if (printToInclusive==0){
             System.out.print("");
         }
-        int i=2;
+        int i=1;
         int j=2;
         while (printToInclusive>i){
             boolean prime = true;
@@ -16,10 +16,11 @@ public class PrimeNumbers {
                 }
                 j++;
             }
-            i++;
+
             if (prime){
                 System.out.println(i);
             }
+            i++;
         }
     }
 }
