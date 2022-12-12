@@ -5,21 +5,19 @@ public class PrimeNumbers {
         if (printToInclusive==0){
             System.out.print("");
         }
-        int i=0;
         int j=2;
-        while (printToInclusive>=i){
+        for (int k = 0; k <= printToInclusive; k++) {
             boolean prime = true;
-            while (j<=Math.sqrt(i)){
-                if (i%j==0){
+            while (j<=Math.sqrt(k)){
+                if (k%j==0){
                     prime=false;
                     break;
                 }
                 j++;
             }
             if (prime){
-                System.out.println(i);
+                System.out.println(k);
             }
-            i++;
         }
     }
 }
