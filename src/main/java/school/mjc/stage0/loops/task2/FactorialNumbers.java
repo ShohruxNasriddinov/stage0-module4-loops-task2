@@ -6,9 +6,10 @@ public class FactorialNumbers {
             System.out.println(1);
         }
         int i = 1;
+        int a =1;
         while (printToInclusive>=i){
-            int a =1;
-            System.out.println(a*=i);
+            a*=i;
+            System.out.println(a);
             i++;
         }
     }
