@@ -5,18 +5,17 @@ public class PrimeNumbers {
         if (printToInclusive==0){
             System.out.print("");
         }
-        int i=1;
+        int i=0;
         int j=2;
-        while (printToInclusive>i){
+        while (printToInclusive>=i){
             boolean prime = true;
-            while (j<=i/2){
+            while (j<=Math.sqrt(i)){
                 if (i%j==0){
                     prime=false;
                     break;
                 }
                 j++;
             }
-
             if (prime){
                 System.out.println(i);
             }
